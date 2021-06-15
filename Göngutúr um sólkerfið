@@ -1,0 +1,16 @@
+
+planeturfj = [0.05791*10**(12), 0.1082*10**(12), 0.1496*10**(12), 0.2279*10**(12), 0.7785*10**(12), 1.434*10**(12), 2.871*10**(12), 4.495*10**(12), 5.9*10**12]
+planetur = ['merkur', 'venus', 'jordin', 'mars', 'jupiter', 'saturnus', 'uranus', 'neptunus', 'pluto']
+a = []
+def fjarlaegd(x):
+    h = x/(5.9*10**12)
+    for i in planeturfj:
+       a.append(i*h)
+    #for num in a:
+        #print(list(zip(a, planetur)))
+    print([i for i in zip(planetur, a)])
+    
+    
+#setur inn lengd göngutúrsins inn hér, færð staðsetningu á hverri og einni plánetu
+
+fjarlaegd(2000)
